@@ -1,25 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@components/Navbar";
 import { NavLink } from "react-router-dom";
+import ModalBuy from '@components/ModalBuy';
+import ModalBid from '@components/ModalBid';
 
 import i_token from '@assets/images/i_token.png';
 import i_heart from '@assets/images/i_heart.svg';
 import p_1 from '@assets/images/p-1.png';
 import u1 from '@assets/images/u1.png';
 import u2 from '@assets/images/u2.png';
-import { Nav } from "react-bootstrap";
 
 const HomeView: React.FC = () => {
+	const [showModalBuy, setShowModalBuy] = useState < boolean > (true);
+	const [showModalBid, setShowModalBid] = useState < boolean > (true);
+
 	return (
 		<>
-			<Navbar/>
+			<Navbar />
 			<div className="mainPage">
 				<section className="section">
 					<div className="container">
 						<div className="row">
 							<div className="col-md-6 pr-lg-5">
 								<div className="Pimg">
-									<img alt="" src={p_1}/>
+									<img alt="" src={p_1} />
 								</div>
 								<div className="Pinfo">
 									<div className="Pinfo_item">
@@ -41,14 +45,14 @@ const HomeView: React.FC = () => {
 									<div className="PmetaHeader">
 										<div className="P_ownerGroup">
 											<div className="P_owner">
-												<img alt="" src={u1} className="P_ownerImage"/>
+												<img alt="" src={u1} className="P_ownerImage" />
 												<div className="P_ownerInfo">
 													<div className="small text-secondary">Creator</div>
 													<div className="font-weight-medium">Akatsuki</div>
 												</div>
 											</div>
 											<div className="P_owner">
-												<img alt="" src={u2} className="P_ownerImage"/>
+												<img alt="" src={u2} className="P_ownerImage" />
 												<div className="P_ownerInfo">
 													<div className="small text-secondary">Owner by</div>
 													<div className="font-weight-medium">Guy Hawkins</div>
@@ -56,8 +60,8 @@ const HomeView: React.FC = () => {
 											</div>
 										</div>
 										<div className="P_likeCount">
-											<button type="button" className="btn btn_like"> 
-												<img alt="" src={i_heart} width="20" className="mr-2"/>
+											<button type="button" className="btn btn_like">
+												<img alt="" src={i_heart} width="20" className="me-2" />
 												<span>3</span>
 											</button>
 										</div>
@@ -92,14 +96,14 @@ const HomeView: React.FC = () => {
 											<div>Price</div>
 											<div className="P_price">
 												<span className="P_tokenPrice">
-													<img alt="" src={i_token}/>
+													<img alt="" src={i_token} />
 													<span>150 STRT</span>
 												</span>
 												<span className="P_convertPrice">≈ $ 149.91</span>
 											</div>
 										</div>
 										<div>
-											<NavLink to="#" className="btn btn-primary btn_buy me-2 mb-2" data-toggle="modal" data-target="#buyModal">Buy now</NavLink>
+											<button onClick={() => setShowModalBuy(!showModalBuy)} className="btn btn-primary btn_buy me-2 mb-2" data-toggle="modal" data-target="#buyModal">Buy now</button>
 											<NavLink to="#" className="btn btn-primary btn_buy me-2 mb-2" data-toggle="modal" data-target="#bidModal">Place bid</NavLink>
 										</div>
 									</div>
@@ -157,7 +161,7 @@ const HomeView: React.FC = () => {
 															</td>
 															<td>0x6288...65D2</td>
 															<td>0x6288...A982</td>
-															<td className="text-right"><img alt="" src={i_token} width="16" height="16"/> 90 CTV</td>
+															<td className="text-right"><img alt="" src={i_token} width="16" height="16" /> 90 CTV</td>
 														</tr>
 														<tr>
 															<td>
@@ -166,7 +170,7 @@ const HomeView: React.FC = () => {
 															</td>
 															<td>0x6288...65D2</td>
 															<td>0x6288...A982</td>
-															<td className="text-right"><img alt="" src={i_token} width="16" height="16"/> 90 CTV</td>
+															<td className="text-right"><img alt="" src={i_token} width="16" height="16" /> 90 CTV</td>
 														</tr>
 													</tbody>
 												</table>
@@ -179,6 +183,8 @@ const HomeView: React.FC = () => {
 					</div>
 				</section>
 			</div>
+			<ModalBuy show={showModalBuy} onHide={() => setShowModalBuy(!showModalBuy)} />
+			<ModalBid show={showModalBid} onHide={() => setShowModalBid(!showModalBid)} />
 		</>
 	);
 };

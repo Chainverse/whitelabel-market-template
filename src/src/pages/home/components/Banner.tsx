@@ -8,7 +8,7 @@ const SectionView: React.FC = () => {
 		<React.Fragment>
 			<section id="topBanner">
 				<NavLink to="#">
-					<img className="topBanner" src={banner} alt=''/>
+					<img className="topBanner" src={banner} alt='' />
 				</NavLink>
 			</section>
 		</React.Fragment>

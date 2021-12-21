@@ -9,15 +9,15 @@ import p_4 from '@assets/images/p-4.png';
 import p_5 from '@assets/images/p-5.png';
 
 const SectionView: React.FC = () => {
-	return (
-		<React.Fragment>
-            <div id="topP"  className="section">
+    return (
+        <React.Fragment>
+            <div id="topP" className="section">
                 <div className="container">
                     <div className="topP owl-carousel owl-theme" data-slider-id="1">
                         <div className="row align-items-center px-1">
                             <div className="col-md-6 pr-lg-5">
                                 <div className="Pimg">
-                                    <img src={p_1} alt=""/>
+                                    <img src={p_1} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 pl-lg-4">
@@ -32,7 +32,7 @@ const SectionView: React.FC = () => {
                                             <div>Price</div>
                                             <div className="P_price">
                                                 <span className="P_tokenPrice">
-                                                    <img src={i_token} alt=""/>
+                                                    <img src={i_token} alt="" />
                                                     <span>150 STRT</span>
                                                 </span>
                                                 <span className="P_convertPrice">≈ $ 149.91</span>
@@ -48,7 +48,7 @@ const SectionView: React.FC = () => {
                         <div className="row align-items-center px-1">
                             <div className="col-md-6 pr-lg-5">
                                 <div className="Pimg">
-                                    <img src={p_2} alt=""/>
+                                    <img src={p_2} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 pl-lg-4">
@@ -63,7 +63,7 @@ const SectionView: React.FC = () => {
                                             <div>Price</div>
                                             <div className="P_price">
                                                 <span className="P_tokenPrice">
-                                                    <img src={i_token} alt=""/>
+                                                    <img src={i_token} alt="" />
                                                     <span>150 STRT</span>
                                                 </span>
                                                 <span className="P_convertPrice">≈ $ 149.91</span>
@@ -79,7 +79,7 @@ const SectionView: React.FC = () => {
                         <div className="row align-items-center px-1">
                             <div className="col-md-6 pr-lg-5">
                                 <div className="Pimg">
-                                    <img src={p_3} alt=""/>
+                                    <img src={p_3} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 pl-lg-4">
@@ -94,7 +94,7 @@ const SectionView: React.FC = () => {
                                             <div>Price</div>
                                             <div className="P_price">
                                                 <span className="P_tokenPrice">
-                                                    <img src={i_token} alt=""/>
+                                                    <img src={i_token} alt="" />
                                                     <span>150 STRT</span>
                                                 </span>
                                                 <span className="P_convertPrice">≈ $ 149.91</span>
@@ -110,7 +110,7 @@ const SectionView: React.FC = () => {
                         <div className="row align-items-center px-1">
                             <div className="col-md-6 pr-lg-5">
                                 <div className="Pimg">
-                                    <img src={p_4} alt=""/>
+                                    <img src={p_4} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 pl-lg-4">
@@ -125,7 +125,7 @@ const SectionView: React.FC = () => {
                                             <div>Price</div>
                                             <div className="P_price">
                                                 <span className="P_tokenPrice">
-                                                    <img src={i_token} alt=""/>
+                                                    <img src={i_token} alt="" />
                                                     <span>150 STRT</span>
                                                 </span>
                                                 <span className="P_convertPrice">≈ $ 149.91</span>
@@ -141,7 +141,7 @@ const SectionView: React.FC = () => {
                         <div className="row align-items-center px-1">
                             <div className="col-md-6 pr-lg-5">
                                 <div className="Pimg">
-                                    <img src={p_5} alt=""/>
+                                    <img src={p_5} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 pl-lg-4">
@@ -156,7 +156,7 @@ const SectionView: React.FC = () => {
                                             <div>Price</div>
                                             <div className="P_price">
                                                 <span className="P_tokenPrice">
-                                                    <img src={i_token} alt=""/>
+                                                    <img src={i_token} alt="" />
                                                     <span>150 STRT</span>
                                                 </span>
                                                 <span className="P_convertPrice">≈ $ 149.91</span>
@@ -172,16 +172,16 @@ const SectionView: React.FC = () => {
                     </div>
 
                     <div className="owl-thumbs" data-slider-id="1">
-                        <NavLink to="#" className="owl-thumb-item"><img src={p_1} alt=""/></NavLink>
-                        <NavLink to="#" className="owl-thumb-item"><img src={p_2} alt=""/></NavLink>
-                        <NavLink to="#" className="owl-thumb-item"><img src={p_3} alt=""/></NavLink>
-                        <NavLink to="#" className="owl-thumb-item"><img src={p_4} alt=""/></NavLink>
-                        <NavLink to="#" className="owl-thumb-item"><img src={p_5} alt=""/></NavLink>
+                        <NavLink to="#" className="owl-thumb-item"><img src={p_1} alt="" /></NavLink>
+                        <NavLink to="#" className="owl-thumb-item"><img src={p_2} alt="" /></NavLink>
+                        <NavLink to="#" className="owl-thumb-item"><img src={p_3} alt="" /></NavLink>
+                        <NavLink to="#" className="owl-thumb-item"><img src={p_4} alt="" /></NavLink>
+                        <NavLink to="#" className="owl-thumb-item"><img src={p_5} alt="" /></NavLink>
                     </div>
                 </div>
             </div>
-		</React.Fragment>
-	);
+        </React.Fragment>
+    );
 }
 
 export default SectionView;

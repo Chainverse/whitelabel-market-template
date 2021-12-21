@@ -7,11 +7,11 @@ import Listing from "./components/List";
 const HomeView: React.FC = () => {
 	return (
 		<>
-			<Navbar/>
+			<Navbar />
 			<div className="mainPage">
-				<Banner/>
-				<Carousel/>
-				<Listing/>
+				<Banner />
+				<Carousel />
+				<Listing />
 			</div>
 		</>
 	);
