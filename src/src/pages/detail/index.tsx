@@ -11,8 +11,8 @@ import u1 from '@assets/images/u1.png';
 import u2 from '@assets/images/u2.png';
 
 const HomeView: React.FC = () => {
-	const [showModalBuy, setShowModalBuy] = useState < boolean > (true);
-	const [showModalBid, setShowModalBid] = useState < boolean > (true);
+	const [showModalBuy, setShowModalBuy] = useState < boolean > (false);
+	const [showModalBid, setShowModalBid] = useState < boolean > (false);
 
 	return (
 		<>
@@ -103,8 +103,8 @@ const HomeView: React.FC = () => {
 											</div>
 										</div>
 										<div>
-											<button onClick={() => setShowModalBuy(!showModalBuy)} className="btn btn-primary btn_buy me-2 mb-2" data-toggle="modal" data-target="#buyModal">Buy now</button>
-											<NavLink to="#" className="btn btn-primary btn_buy me-2 mb-2" data-toggle="modal" data-target="#bidModal">Place bid</NavLink>
+											<button onClick={() => setShowModalBuy(!showModalBuy)} className="btn btn-primary btn_buy me-2 mb-2" >Buy now</button>
+											<button onClick={() => setShowModalBid(!showModalBid)} className="btn btn-primary btn_buy me-2 mb-2" >Place bid</button>
 										</div>
 									</div>
 								</div>

@@ -44,8 +44,8 @@ const ModalBid: React.FC<ModalBidProps> = props => {
                     </label>
                 </div>
             </div>
-            <div className="modal-footer">
-                <button type="submit" className="btn btn-primary btn-block btn_buy">Place bid</button>
+            <div className="modal-footer mx-auto w-100">
+                <button type="submit" className="btn btn-primary btn-block btn_buy w-100">Place bid</button>
             </div>
         </Modal>
 

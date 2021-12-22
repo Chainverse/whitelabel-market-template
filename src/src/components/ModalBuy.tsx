@@ -3,9 +3,8 @@ import { Modal } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 import i_closeModal from '@assets/images/i_closeModal.svg';
-import logo from '@assets/images/logo.png';
-import i_metaMask from '@assets/images/i_metaMask.png';
 import i_token from '@assets/images/i_token.png';
+import p_1 from '@assets/images/p-1.png';
 
 interface ModalBuyProps {
     show: boolean;
@@ -30,7 +29,7 @@ const ModalBuy: React.FC<ModalBuyProps> = props => {
                     </div>
                     <div className="buyRow pl-3">
                         <NavLink to="#" className="buyInfoItem">
-                            <img src="images/p-1.png" alt="" />
+                            <img src={p_1} alt="" />
                             <span className="d-flex flex-column">
                                 <span className="mb-1">ThorGuards #4195</span>
                                 <span className="text-primary small">#4195</span>
@@ -56,8 +55,8 @@ const ModalBuy: React.FC<ModalBuyProps> = props => {
                     </label>
                 </div>
             </div>
-            <div className="modal-footer">
-                <button type="submit" className="btn btn-primary btn-block btn_buy">Confirm checkout</button>
+            <div className="modal-footer mx-auto w-100">
+                <button type="submit" className="btn btn-primary btn-block btn_buy w-100">Confirm checkout</button>
             </div>
         </Modal>
 
