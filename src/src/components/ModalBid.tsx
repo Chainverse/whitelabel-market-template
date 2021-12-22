@@ -1,10 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 
 import i_closeModal from '@assets/images/i_closeModal.svg';
-import logo from '@assets/images/logo.png';
-import i_metaMask from '@assets/images/i_metaMask.png';
 import i_token from '@assets/images/i_token.png';
 
 interface ModalBidProps {

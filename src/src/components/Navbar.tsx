@@ -8,6 +8,10 @@ import i_wallet from '@assets/images/i_wallet.svg';
 import i_copy from '@assets/images/i_copy.svg';
 import i_token from '@assets/images/i_token.png';
 
+import USDT from '@assets/images/coin/USDT.svg';
+import BNB from '@assets/images/coin/BNB.svg';
+import BUSD from '@assets/images/coin/BUSD.svg';
+
 const NavbarView: React.FC = () => {
 	const [showModalLogin, setShowModalLogin] = useState < boolean > (false);
 	return (
@@ -55,17 +59,17 @@ const NavbarView: React.FC = () => {
 										<span>215.46</span>
 									</div>
 									<div className="walletItem">
-										<img src="https://market.dev.chainverse.xyz/a42952da42dbbb04c05481a713ceed6e.svg" width="24" className="tokenIcon" alt="" />
+										<img src={USDT} width="24" className="tokenIcon" alt="" />
 										<span className="tokenName">USDT</span>
 										<span>215.46</span>
 									</div>
 									<div className="walletItem">
-										<img src="https://market.dev.chainverse.xyz/488237bcbb08c092806e0e404596d001.svg" width="24" className="tokenIcon" alt="" />
+										<img src={BNB} width="24" className="tokenIcon" alt="" />
 										<span className="tokenName">BNB</span>
 										<span>215.46</span>
 									</div>
 									<div className="walletItem">
-										<img src="https://market.dev.chainverse.xyz/ad2df0e6f80ce44f33d10cb1caf7329b.svg" width="24" className="tokenIcon" alt="" />
+										<img src={BUSD} width="24" className="tokenIcon" alt="" />
 										<span className="tokenName">BUSD</span>
 										<span>215.46</span>
 									</div>
